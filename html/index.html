@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <title>UI components</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=5" />
+    <meta name="description" content="Mobilar UI Framework & BEM component library">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- =====================================
+    Favicons
+    ====================================== -->
+
+    <!-- favicons:html -->
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png">
+<link rel="manifest" href="/favicons/manifest.json">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#fff">
+<meta name="application-name" content="Mobilar - UI Components">
+<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="167x167" href="/favicons/apple-touch-icon-167x167.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon" sizes="1024x1024" href="/favicons/apple-touch-icon-1024x1024.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mobilar - UI Components">
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"    href="/favicons/apple-touch-startup-image-640x1136.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"    href="/favicons/apple-touch-startup-image-750x1334.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"    href="/favicons/apple-touch-startup-image-828x1792.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"    href="/favicons/apple-touch-startup-image-1125x2436.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"    href="/favicons/apple-touch-startup-image-1242x2208.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"    href="/favicons/apple-touch-startup-image-1242x2688.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"   href="/favicons/apple-touch-startup-image-1536x2048.png">
+<link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"   href="/favicons/apple-touch-startup-image-1668x2224.png">
+<link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"   href="/favicons/apple-touch-startup-image-1668x2388.png">
+<link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"  href="/favicons/apple-touch-startup-image-2048x2732.png">
+<link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"  href="/favicons/apple-touch-startup-image-1620x2160.png">
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"   href="/favicons/apple-touch-startup-image-1136x640.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"   href="/favicons/apple-touch-startup-image-1334x750.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"   href="/favicons/apple-touch-startup-image-1792x828.png">
+<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"   href="/favicons/apple-touch-startup-image-2436x1125.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"   href="/favicons/apple-touch-startup-image-2208x1242.png">
+<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"   href="/favicons/apple-touch-startup-image-2688x1242.png">
+<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"  href="/favicons/apple-touch-startup-image-2048x1536.png">
+<link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"  href="/favicons/apple-touch-startup-image-2224x1668.png">
+<link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"  href="/favicons/apple-touch-startup-image-2388x1668.png">
+<link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/favicons/apple-touch-startup-image-2732x2048.png">
+<link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"  href="/favicons/apple-touch-startup-image-2160x1620.png">
+<link rel="icon" type="image/png" sizes="228x228" href="/favicons/coast-228x228.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+<link rel="yandex-tableau-widget" href="/favicons/yandex-browser-manifest.json">
+    <!-- endinject -->
+
+    <!-- =====================================
+    Styles and pre scripts
+    ====================================== -->
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- vendor:css -->
+    <!-- endinject -->
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/css/app.css">
+    <!-- endinject -->
+
+    <!-- pre:js -->
+    <script src="/js/app-pre.js"></script>
+    <!-- endinject -->
+
+</head>
+
+<body>
+
+    <!-- Replace all data attributes (jQuery) with app logic (React/Angular etc.) -->
+
+    <div class="mb-off-canvas mb-off-canvas--is-responsive">
+
+        <div class="mb-off-canvas__panel mb-off-canvas__panel--left"
+             aria-hidden="true">
+
+            <div class="mb-page__header">
+
+                <p style="display: table-cell; text-align: center; vertical-align: middle;">
+                    Off-Canvas, left
+                </p>
+
+                <button class="mb-control mb-control--icon-arrow-left mb-control--medium mb-control--align-left"
+                        data-toggle="off-canvas"
+                        data-toggle-canvas-element=".mb-off-canvas__panel--left"
+                        data-toggle-canvas-class="mb-off-canvas__panel--is-open"
+                        data-toggle-control-element=".mb-control--icon-burger"
+                        data-toggle-control-class="mb-control--is-active"
+                        aria-label="Close left sidebar"
+                        aria-pressed="false">
+                    <i class="mb-control__icon"></i>
+                </button>
+
+            </div> <!-- end: mb-page__header -->
+
+            <div class="mb-page__content">
+
+                <form class="mb-form" accept-charset="utf-8">
+                    <input class="mb-form__input" id="search" type="text" name="Suche" placeholder="Was suchen Sie?" data-cip-id="Suche">
+                </form>
+
+                </br>
+
+                <ul class="mb-list mb-list--has-divider x-mb-list--has-bullets-arrow">
+                    <li class="mb-list__item">
+                        Item 1
+                    </li>
+                    <li class="mb-list__item">
+                        Item 2
+                    </li>
+                    <li class="mb-list__item">
+                        Item 3
+                    </li>
+                    <li class="mb-list__item">
+                        Item 4
+                    </li>
+                    <li class="mb-list__item">
+                        Item 5
+                    </li>
+                    <li class="mb-list__item">
+                        Item 6
+                    </li>
+                    <li class="mb-list__item">
+                        Item 7
+                    </li>
+                    <li class="mb-list__item">
+                        Item 8
+                    </li>
+                </ul>
+                 
+            </div> <!-- end: mb-page__content -->
+
+        </div> <!-- end: off-canvas__panel--left -->
+
+        <div class="mb-off-canvas__panel mb-off-canvas__panel--right"
+             aria-hidden="true">
+
+            <div class="mb-page__header">
+
+                <p style="display: table-cell; text-align: center; vertical-align: middle;">
+                    Off-Canvas, right
+                </p>
+
+                <button class="mb-control mb-control--icon-arrow-right mb-control--medium mb-control--align-right"
+                        data-toggle="off-canvas"
+                        data-toggle-canvas-element=".mb-off-canvas__panel--right"
+                        data-toggle-canvas-class="mb-off-canvas__panel--is-open"
+                        data-toggle-control-element=".mb-control--icon-more"
+                        data-toggle-control-class="mb-control--is-active"
+                        x-data-toggle-page-element="#responsive-overlay"
+                        x-data-toggle-page-class="mb-page__overlay--is-active x-mb-page__overlay--is-pending"
+                        aria-label="Close right sidebar"
+                        aria-pressed="false">
+                    <i class="mb-control__icon"></i>
+                </button>
+
+            </div> <!-- end: mb-page__header -->
+
+            <div class="mb-page__content">
+                <h1 class="mb-headline mb-headline--large">Anmeldung</h1>
+                <form class="mb-form" accept-charset="utf-8">
+                    <label class="mb-form__label" for="username">Handynummer</label>
+                    <input class="mb-form__input" id="username" type="number" name="Handynummer" placeholder="Beispiel: 017612345678" data-cip-id="Handynummer">
+                    <label class="mb-form__label" for="password">Kennwort</label>
+                    <input class="mb-form__input" id="password" type="password" name="Kennwort" placeholder="•••••" data-cip-id="Kennwort">
+                    </br>
+                    <input class="mb-button mb-button--primary mb-button mb-button--is-expanded" type="button" name="Login" value="Anmelden">
+                </form>
+                </br>
+                <hr style="border: 0; border-top: 3px solid black;">
+                <h2 class="mb-headline mb-headline--medium mb-headline--is-padded">Kennwort vergessen?</h2>
+                <p>
+                    Kein Problem! Hier können Sie Ihr Kennwort zurücksetzen lassen.
+                </p>
+                </br>
+                <form class="mb-form" accept-charset="utf-8">
+                    <input class="mb-button mb-button--secondary mb-button mb-button--is-expanded" type="button" name="Reset" value="Kennwort zurücksetzen">
+                </form>
+            </div> <!-- end: mb-page__content -->
+
+        </div> <!-- end: off-canvas__panel--right -->
+
+        <div class="mb-off-canvas__stage">
+
+            <!-- =====================================
+            Page
+            ====================================== -->
+
+            <div class="mb-page mb-page--is-responsive x-mb-page--is-pending">
+
+                <!-- ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑
+                Page - Header
+                ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑ -->
+
+                <div class="mb-page__header">
+
+                    <button class="mb-control mb-control--icon-burger mb-control--align-left mb-control--is-responsive"
+                            data-toggle="off-canvas"
+                            data-toggle-canvas-element=".mb-off-canvas__panel--left"
+                            data-toggle-canvas-class="mb-off-canvas__panel--is-open"
+                            data-toggle-control-element=".mb-control--icon-burger"
+                            data-toggle-control-class="mb-control--is-active"
+                            aria-label="Open left sidebar"
+                            aria-pressed="false">
+                        <i class="mb-control__icon"></i>
+                    </button>                   
+
+                    <div class="mb-page__content">
+                        <div class="mb-logo mb-logo--is-responsive"></div>
+
+                        <!-- TODO: add visibility classes for additional components, e.g. weather widgets -->
+                    </div>
+
+                    <button class="mb-control mb-control--icon-more mb-control--align-right mb-control--is-responsive"
+                            data-toggle="off-canvas"
+                            data-toggle-canvas-element=".mb-off-canvas__panel--right"
+                            data-toggle-canvas-class="mb-off-canvas__panel--is-open"
+                            data-toggle-control-element=".mb-control--icon-more"
+                            data-toggle-control-class="mb-control--is-active"
+                            x-data-toggle-page-element="#responsive-overlay"
+                            x-data-toggle-page-class="mb-page__overlay--is-active x-mb-page__overlay--is-pending x-mb-page__overlay--is-hidden"
+                            aria-label="Open right sidebar"
+                            aria-pressed="false">
+                        <i class="mb-control__icon"></i>
+                        <!--
+                        <span class="mb-label mb-label--alert mb-label--small"
+                              style="position: absolute; top: 0.75em; right: 0.75em;">
+                            3
+                        </span>
+                        -->
+                    </button>
+
+                </div> <!-- end: mb-page__header -->
+
+                <!-- ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑
+                Page - Main
+                ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑ -->
+
+                <div class="mb-page__main">
+
+                    <div class="mb-page__content">
+
+                        <div class="mb-widget x-mb-widget--is-pending">
+                            <header class="mb-widget__header">
+                                <div class="mb-widget__title">
+                                    <h2 class="mb-headline mb-headline--small">
+                                        Headline
+                                    </h2>
+                                </div>
+                                <div class="mb-widget__actions">
+                                    <ul class="mb-list mb-list--horizontal mb-list--has-divider">
+                                        <li class="mb-list__item">
+                                            <i class="mb-widget__state"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </header>
+                            <div class="mb-widget__main">
+                                
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                            </div>
+                        </div> <!-- widget: end -->
+
+                        <br />
+
+                        <div class="mb-widget x-mb-widget--is-responsive x-mb-widget--is-pending">
+                            <header class="mb-widget__header">
+                                <div class="mb-widget__title">
+                                    <h2 class="mb-headline mb-headline--small">
+                                        Headline
+                                    </h2>
+                                </div>
+                                <div class="mb-widget__actions">
+                                    <ul class="mb-list mb-list--horizontal mb-list--has-divider">
+                                        <li class="mb-list__item">
+                                            <i class="mb-widget__state"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </header>
+                            <div class="mb-widget__main">
+                                
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                            </div>
+                        </div> <!-- widget: end -->
+
+                        <br />
+
+                        <div class="mb-widget x-mb-widget--is-responsive x-mb-widget--is-pending">
+                            <header class="mb-widget__header">
+                                <div class="mb-widget__title">
+                                    <h2 class="mb-headline mb-headline--small">
+                                        Headline
+                                    </h2>
+                                </div>
+                                <div class="mb-widget__actions">
+                                    <ul class="mb-list mb-list--horizontal mb-list--has-divider">
+                                        <li class="mb-list__item">
+                                            <i class="mb-widget__state"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </header>
+                            <div class="mb-widget__main">
+                                
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                            </div>
+                        </div> <!-- widget: end -->
+
+                        <br />
+
+                        <div class="mb-widget x-mb-widget--is-responsive x-mb-widget--is-pending">
+                            <header class="mb-widget__header">
+                                <div class="mb-widget__title">
+                                    <h2 class="mb-headline mb-headline--small">
+                                        Headline
+                                    </h2>
+                                </div>
+                                <div class="mb-widget__actions">
+                                    <ul class="mb-list mb-list--horizontal mb-list--has-divider">
+                                        <li class="mb-list__item">
+                                            <i class="mb-widget__state"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </header>
+                            <div class="mb-widget__main">
+                                
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                            </div>
+                        </div> <!-- widget: end -->
+
+                        <br />
+                                                
+                        <div class="mb-widget x-mb-widget--is-responsive x-mb-widget--is-pending">
+                            <header class="mb-widget__header">
+                                <div class="mb-widget__title">
+                                    <h2 class="mb-headline mb-headline--small">
+                                        Headline
+                                    </h2>
+                                </div>
+                                <div class="mb-widget__actions">
+                                    <ul class="mb-list mb-list--horizontal mb-list--has-divider">
+                                        <li class="mb-list__item">
+                                            <i class="mb-widget__state"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </header>
+                            <div class="mb-widget__main">
+                                
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                            </div>
+                        </div> <!-- widget: end -->
+
+                        <br /> <!-- TODO: Add visibility classes -->
+
+                        <div id="responsive-overlay" class="x-mb-page__overlay x-mb-page__overlay--right">
+
+                            <div class="mb-widget mb-widget--is-active">
+                                <header class="mb-widget__header">
+                                    <div class="mb-widget__icon">
+                                        <i class="material-icons">
+                                            search
+                                        </i>
+                                    </div>
+                                    <div class="mb-widget__title">
+                                        <h2 class="mb-headline mb-headline--small">
+                                            Details
+                                        </h2>
+                                    </div>
+                                    <div class="mb-widget__actions">
+                                        <ul class="mb-list mb-list--horizontal mb-list--has-divider">
+                                            <li class="mb-list__item">
+                                                <i class="mb-widget__state"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </header>
+                                <div class="mb-widget__main">
+                                    
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                                </div>
+                                <footer class="mb-widget__footer">
+                                    <dl class="mb-list mb-list--description mb-list--has-divider mb-list--compact">
+                                        <dt class="mb-list__term">Metric</dt>
+                                        <dd class="mb-list__description">0</dd>
+                                        <dt class="mb-list__term">Metric</dt>
+                                        <dd class="mb-list__description">0</dd>
+                                        <dt class="mb-list__term">Metric</dt>
+                                        <dd class="mb-list__description">0</dd>
+                                    </dl>
+                                </footer>
+                            </div> <!-- widget: end -->
+
+                        </div> <!-- end: mb-page__overlay -->
+
+                    </div> <!-- end: mb-page__content -->
+
+                </div> <!-- end: mb-page__main -->
+
+                <!-- ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑
+                Page - Footer
+                ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑ -->
+
+                <div class="mb-page__footer">
+
+                    <div class="mb-page__content">
+                        
+                        <p style="margin: 0; text-align: center;">
+                            <span>
+                                Copyright © Awesome Company 2020
+                            </span>
+                        </p>
+
+                    </div>
+
+                </div> <!-- end: mb-page__footer -->
+
+            </div> <!-- end: mb-page -->
+
+        </div> <!-- end: off-canvas__stage -->
+
+    </div>
+
+    <!-- =====================================
+    Scripts
+    ====================================== -->
+
+    <!-- vendor:js -->
+    <!-- endinject -->
+
+    <!-- inject:js -->
+    <script src="/js/app.js"></script>
+    <!-- endinject -->
+
+    <!-- =====================================
+    Tracking and support scripts
+    ====================================== -->
+
+    <!-- Add tracking and support scripts here -->
+
+</body>
+
+</html>
